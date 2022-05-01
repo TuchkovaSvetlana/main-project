@@ -1,0 +1,169 @@
+.reviews {
+  background-color: $background-light;
+}
+
+.reviews__title {
+  margin: 0 0 58px;
+  padding: 57px 0 0;
+}
+
+.reviews-wrap {
+  width: 1074px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.reviews__img {
+  position: absolute;
+  top: 46px;
+  left: 52px;
+  width: 481px;
+  height: 331px;
+}
+
+.reviews__quote-wrap {
+  background-color: $background-dark;
+  width: 640px;
+  margin-bottom: 112px;
+}
+
+.reviews__quote {
+  margin: 0;
+  padding: 110px 57px 0 145px;
+}
+
+.reviews__author {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  font-style: normal;
+  display: block;
+  margin: 0 0 14px;
+}
+
+.reviews__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 23px;
+  margin: 0 0 37px;
+
+  br {
+    display: none;
+  }
+}
+
+.reviews__time {
+  font-size: 12px;
+  line-height: 19px;
+  color: $text-accent;
+  padding: 0 0 0 146px;
+}
+
+.reviews__socials-wrap {
+  display: flex;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.reviews__list-socials {
+  list-style: none;
+  margin: 0 0 0 36px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 73px;
+  justify-content: space-between;
+}
+
+.reviews__link {
+  display: block;
+  text-align: center;
+  width: 28px;
+  height: 28px;
+  border: 0.5px solid $border;
+
+  &:hover {
+    background-color: $text;
+  }
+}
+
+.reviews__btn-wrap {
+  display: none;
+}
+
+@media (max-width: $desktop-width) {
+  .reviews__title {
+    margin-bottom: 143px;
+  }
+
+  .reviews__img {
+    width: 302px;
+    height: 208px;
+    top: -90px;
+    left: 27%;
+  }
+
+  .reviews-wrap {
+    width: 650px;
+    justify-content: center;
+  }
+
+  .reviews__quote-wrap {
+    width: 578px;
+    margin-bottom: 87px;
+  }
+
+  .reviews__quote {
+    padding: 148px 70px 0 108px;
+    text-align: center;
+  }
+
+  .reviews__text {
+    margin-bottom: 24px;
+
+    br {
+      display: block;
+    }
+  }
+
+  .reviews__socials-wrap {
+    padding-bottom: 34px;
+    justify-content: center;
+  }
+
+  .reviews__time {
+    padding-left: 40px;
+  }
+
+  .reviews__btn-wrap {
+    display: block;
+  }
+
+  .reviews__btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+  }
+
+  .reviews__btn_back {
+    top: 37px;
+    left: 85px;
+  }
+
+  .reviews__btn_next {
+    top: 37px;
+    right: 85px;
+  }
+
+  .reviews__btn-img {
+    stroke: $text-accent;
+    opacity: 0.5;
+
+    &:hover {
+      stroke: $text;
+    }
+  }
+}

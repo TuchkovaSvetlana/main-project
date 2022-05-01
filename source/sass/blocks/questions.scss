@@ -1,0 +1,233 @@
+.questions {
+  background-color: $background-light;
+}
+
+.questions__title {
+  margin: 0 0 20px;
+  padding: 76px 0 0;
+}
+
+.questions__text {
+  margin: 0 0 53px;
+  letter-spacing: 0.2px;
+}
+
+.questions__list-wrap {
+  margin: 0 auto;
+  width: 928px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.questions__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.questions__item-question {
+  display: flex;
+  margin-bottom: 36px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 119px;
+    height: 114px;
+    left: -113px;
+    top: 25%;
+  }
+}
+
+.questions__item-question_first {
+  &::before {
+    background-image: url("../img/01.png");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/01@2x.png");
+  }
+}
+
+.questions__item-question_second {
+  &::before {
+    background-image: url("../img/02.png");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/02@2x.png");
+  }
+}
+
+.questions__item-question_third {
+  &::before {
+    background-image: url("../img/03.png");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/03@2x.png");
+  }
+}
+
+.questions__item-question_fourth {
+  &::before {
+    background-image: url("../img/04.png");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/04@2x.png");
+  }
+}
+
+.questions__item-question_active {
+  margin-bottom: 0;
+}
+
+.questions__list-btn {
+  padding: 0;
+  border: 0.5px solid $border;
+  background-color: transparent;
+  width: 105px;
+  min-height: 110px;
+  cursor: pointer;
+  background-image: url("../img/questions.btn-open.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &:hover {
+    background-color: $text;
+  }
+}
+
+.questions__list-btn_active {
+  background-image: url("../img/questions.btn-close.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: $text-accent;
+
+  &:hover {
+    background-color: $border;
+  }
+}
+
+.questions__text-question {
+  margin: 0;
+  width: 688px;
+  min-height: 110px;
+  border: 0.5px solid $border;
+  border-right: 0;
+  padding: 46px 42px 20px;
+  letter-spacing: 0.2px;
+}
+
+.questions__item-answer {
+  display: none;
+}
+
+.questions__item-answer_active {
+  display: block;
+  width: 793px;
+  border: 0.5px solid $border;
+  border-top: 0;
+  margin: 0 0 38px;
+  padding: 40px 203px 10px 42px;
+}
+
+.questions__text-answer {
+  margin: 0 0 28px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+@media (max-width: $desktop-width) {
+  .questions__title {
+    padding-top: 137px;
+  }
+
+  .questions__text {
+    margin-bottom: 50px;
+  }
+
+  .questions__list-wrap {
+    width: 658px;
+  }
+
+  .questions__text-question {
+    width: 480px;
+    display: flex;
+    align-items: center;
+    padding: 15px 80px 10px 27px;
+    line-height: 18px;
+    min-height: 35px;
+  }
+
+  .questions__list-btn {
+    width: 72px;
+    min-height: 76px;
+  }
+
+  .questions__item-answer_active {
+    width: 552px;
+    padding: 27px 130px 0 27px;
+    margin-bottom: 23px;
+  }
+
+  .questions__text-answer {
+    line-height: 24px;
+  }
+
+  .questions__item-question {
+    margin-bottom: 27px;
+
+    &::before {
+      left: -80px;
+      top: 25%;
+    }
+  }
+
+  .questions__item-question_active {
+    margin-bottom: 0;
+  }
+
+  .questions__item-question_first {
+    &::before {
+      background-image: url("../img/01_tablet.png");
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/01_tablet@2x.png");
+    }
+  }
+
+  .questions__item-question_second {
+    &::before {
+      background-image: url("../img/02_tablet.png");
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/02_tablet@2x.png");
+    }
+  }
+
+  .questions__item-question_third {
+    &::before {
+      background-image: url("../img/03_tablet.png");
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/03_tablet@2x.png");
+    }
+  }
+
+  .questions__item-question_fourth {
+    &::before {
+      background-image: url("../img/04_tablet.png");
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/04_tablet@2x.png");
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.features {
+  background-color: $background-light;
+}
+
+.features__title {
+  padding: 0 0 0 20px;
+  margin: 0 0 20px;
+}
+
+.features__text {
+  width: 760px;
+  padding: 0 10px;
+  margin: 0 auto 30px;
+}
+
+.features__list {
+  list-style: none;
+  padding: 0;
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  background-image: url("../img/features-cat.png");
+  background-repeat: no-repeat;
+  background-position: 56% -85px;
+  background-size: 650px 900px;
+  min-height: 783px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/features-cat2x.png");
+  }
+}
+
+.features__item p {
+  margin: 0;
+  padding: 0;
+}
+
+.features__item:nth-child(1) {
+  font-size: 14px;
+  position: absolute;
+  top: 180px;
+  left: 28px;
+  width: 245px;
+  padding: 0 5px;
+  text-align: right;
+}
+
+.features__item:nth-child(2) {
+  position: absolute;
+  top: 290px;
+  right: -45px;
+  width: 245px;
+  padding: 0 5px;
+}
+
+.features__item:nth-child(3) {
+  position: absolute;
+  top: 508px;
+  right: 60px;
+  width: 180px;
+  padding: 0 5px;
+}
+
+.features__item:nth-child(4) {
+  position: absolute;
+  top: 465px;
+  left: 36px;
+  width: 220px;
+  padding: 0 5px;
+  text-align: right;
+}
+
+@media (max-width: $desktop-width) {
+  .features__title {
+    margin-left: -20px;
+  }
+
+  .features__text {
+    width: 480px;
+  }
+
+  .features__list {
+    width: 760px;
+    min-height: 571px;
+    background-image: url("../img/features-cat__tablet.png");
+    background-size: 430px 609px;
+    background-position: 53% -37px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/features-cat__tablet2x.png");
+    }
+  }
+
+  .features__item:nth-child(1) {
+    top: 142px;
+    left: 40px;
+    width: 150px;
+  }
+
+  .features__item:nth-child(2) {
+    top: 216px;
+    right: 25px;
+    width: 135px;
+  }
+
+  .features__item:nth-child(3) {
+    top: 364px;
+    right: 65px;
+    width: 120px;
+    line-height: 22px;
+  }
+
+  .features__item:nth-child(4) {
+    top: 335px;
+    left: 36px;
+    width: 145px;
+    line-height: 22px;
+  }
+}

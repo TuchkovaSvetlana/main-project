@@ -1,0 +1,10 @@
+.header__logo img {
+  display: block;
+  margin: 46px auto 0;
+}
+
+@media (max-width: $desktop-width) {
+  .header__logo img {
+    margin-top: 28px;
+  }
+}

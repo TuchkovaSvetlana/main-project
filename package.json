@@ -10,7 +10,6 @@
     "gulp": "4.0.2",
     "gulp-dart-sass": "^1.0.2",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-less": "5.0.0",
     "gulp-libsquoosh": "^1.0.12",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
@@ -25,7 +24,7 @@
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "stylelint": "stylelint \"source/scss/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp"
@@ -43,7 +42,7 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/less/**/*.less"
+    "source/scss/**/*.scss"
   ],
   "engines": {
     "node": "^16.10.0"
