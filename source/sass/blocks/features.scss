@@ -11,6 +11,11 @@
   width: 760px;
   padding: 0 10px;
   margin: 0 auto 30px;
+  white-space: pre-wrap;
+
+  br {
+    display: none;
+  }
 }
 
 .features__list {
@@ -77,6 +82,10 @@
 
   .features__text {
     width: 480px;
+
+    br {
+      display: block;
+    }
   }
 
   .features__list {
@@ -115,5 +124,119 @@
     left: 36px;
     width: 145px;
     line-height: 22px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .features__title {
+    width: 300px;
+    margin: 0 auto 25px;
+    padding: 0;
+  }
+
+  .features__text {
+    width: 280px;
+    padding: 0;
+
+    br {
+      display: none;
+    }
+  }
+
+  .features__list {
+    width: 310px;
+    min-height: 589px;
+    background-image: url("../img/features-cat__mobile.png");
+    background-size: 280px 304px;
+    background-position: center -3px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/features-cat__mobile2x.png");
+    }
+  }
+
+  .features__item:nth-child(1) {
+    font-size: 14px;
+    position: static;
+    width: 270px;
+    text-align: left;
+    padding-top: 337px;
+    padding-left: 28px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 340px;
+      left: 10px;
+      width: 8px;
+      height: 8px;
+      background-color: $text-accent;
+      border-radius: 50%;
+    }
+  }
+
+  .features__item:nth-child(2) {
+    font-size: 14px;
+    position: static;
+    width: 250px;
+    padding-left: 28px;
+    text-align: left;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 400px;
+      left: 10px;
+      width: 8px;
+      height: 8px;
+      background-color: $text-accent;
+      border-radius: 50%;
+    }
+  }
+
+  .features__item:nth-child(3) {
+    font-size: 14px;
+    position: static;
+    width: 290px;
+    text-align: left;
+    padding-left: 28px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 460px;
+      left: 10px;
+      width: 8px;
+      height: 8px;
+      background-color: $text-accent;
+      border-radius: 50%;
+    }
+  }
+
+  .features__item:nth-child(4) {
+    font-size: 14px;
+    position: static;
+    width: 200px;
+    text-align: left;
+    padding-left: 28px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 500px;
+      left: 10px;
+      width: 8px;
+      height: 8px;
+      background-color: $text-accent;
+      border-radius: 50%;
+    }
+  }
+
+  .features__item {
+    line-height: 19px;
+  }
+
+  .features__item:not(:last-child) {
+    margin-bottom: 20px;
   }
 }

@@ -16,3 +16,12 @@
     background-color: $text-accent;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .link {
+    width: 142px;
+    min-height: 40px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

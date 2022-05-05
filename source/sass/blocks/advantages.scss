@@ -36,7 +36,7 @@
 .advantages__img-wrap {
   width: 110px;
   height: 110px;
-  margin: 65px auto 30px;
+  margin: 49px auto 30px;
 }
 
 .advantages__img {
@@ -50,12 +50,20 @@
   color: $text;
   display: inline-block;
   min-width: 320px;
+  min-height: 262px;
+  margin: 17px 20px;
+
+  &:hover {
+    background-color: $text-accent;
+
+    .advantages__img {
+      fill: $text;
+    }
+  }
 }
 
 .advantages__link_active {
   background-color: $text-accent;
-  min-width: 320px;
-  margin: 17px 20px;
 
   svg {
     fill: $text;
@@ -87,5 +95,88 @@
 
   .advantages__item:not(:last-child) {
     margin-bottom: 49px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .advantages__title {
+    padding-top: 55px;
+    width: 220px;
+    line-height: 31px;
+    margin: 0 auto 25px;
+  }
+
+  .advantages__text {
+    width: 290px;
+    margin: 0 auto 36px;
+    letter-spacing: 0;
+  }
+
+  .advantages__list {
+    width: 310px;
+    margin-bottom: 60px;
+  }
+
+  .advantages__item {
+    width: 290px;
+    min-height: 248px;
+    background-color: $background-light;
+    text-align: center;
+  }
+
+  .advantages__link_active {
+    min-width: 260px;
+    margin: 15px;
+
+    .advantages__img-wrap {
+      margin: 18px auto 17px;
+      height: 110px;
+    }
+  }
+
+  .advantages__img_service {
+    width: 80px;
+    height: 88px;
+  }
+
+  .advantages__img_consultation {
+    width: 80px;
+    height: 71px;
+    // margin-top: 48px;
+  }
+
+  .advantages__img_nutrition {
+    width: 57px;
+    height: 88px;
+    // margin: 40px auto 0;
+  }
+
+  .advantages__img-wrap {
+    width: 100px;
+    height: 110px;
+    margin: 10px auto 20px;
+    line-height: 110px;
+
+    svg {
+      display: inline-block;
+      vertical-align: bottom;
+    }
+  }
+
+  .advantages__item-text {
+    font-size: 14px;
+    line-height: 19px;
+    padding-bottom: 30px;
+    width: 235px;
+  }
+
+  .advantages__link {
+    min-width: 260px;
+    min-height: 218px;
+    margin: 15px;
+  }
+
+  .advantages__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }

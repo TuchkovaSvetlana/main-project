@@ -6,3 +6,10 @@
   font-weight: 400;
   text-align: center;
 }
+
+@media (max-width: $tablet-width) {
+  .title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}

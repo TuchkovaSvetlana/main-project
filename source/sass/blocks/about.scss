@@ -57,6 +57,10 @@
 
 .about__quote-content {
   margin: 0 0 44px;
+
+  br {
+    display: none;
+  }
 }
 
 .about__socials-list {
@@ -125,6 +129,10 @@
 
   .about__quote-content {
     margin-bottom: 48px;
+
+    br {
+      display: none;
+    }
   }
 
   .about__btn_back {
@@ -135,5 +143,109 @@
   .about__btn_next {
     top: 474px;
     right: 83px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about__author-img {
+    width: 126px;
+    height: 126px;
+    top: -63px;
+    left: 87px;
+  }
+
+  .about__title {
+    padding: 53px 0 0;
+    width: 300px;
+    margin: 0 auto 25px;
+  }
+
+  .about__text {
+    width: 260px;
+    padding: 0 0 0 3px;
+    letter-spacing: 0;
+    margin-bottom: 98px;
+  }
+
+  .about__slide {
+    width: 320px;
+    margin-bottom: 60px;
+  }
+
+  .about__slide-item {
+    width: 300px;
+  }
+
+  .about__quote-wrap {
+    border: none;
+  }
+
+  .about__content-wrap {
+    width: 290px;
+    margin: 0;
+    padding: 83px 11px 5px;
+    text-align: center;
+  }
+
+  .about__quote-author {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 4px;
+  }
+
+  .about__quote-text {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 15px;
+  }
+
+  .about__quote-content {
+    width: 268px;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 23px;
+
+    br {
+      display: block;
+    }
+  }
+
+  .about__btn svg {
+    width: 10px;
+    height: 20px;
+  }
+
+  .about__btn_back {
+    top: -15px;
+    left: 67px;
+  }
+
+  .about__btn_next {
+    top: -15px;
+    right: 67px;
+  }
+
+  .about__socials-list {
+    width: 70px;
+    margin: 0 auto;
+  }
+
+  .about__link-facebook {
+    width: 7px;
+    height: 12px;
+  }
+
+  .about__link-twitter {
+    width: 16px;
+    height: 12px;
+  }
+
+  .about__link-vk {
+    width: 18px;
+    height: 10px;
+  }
+
+  .about__item:not(:last-child) {
+    margin: 0 14px 5px 0;
   }
 }
