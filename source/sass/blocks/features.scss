@@ -24,14 +24,14 @@
   width: 1100px;
   margin: 0 auto;
   position: relative;
-  background-image: url("../img/features-cat.png");
+  background-image: url("../img/features-cat.webp");
   background-repeat: no-repeat;
   background-position: 56% -85px;
   background-size: 650px 900px;
   min-height: 783px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/features-cat2x.png");
+    background-image: url("../img/features-cat2x.webp");
   }
 }
 
@@ -91,12 +91,12 @@
   .features__list {
     width: 760px;
     min-height: 571px;
-    background-image: url("../img/features-cat__tablet.png");
+    background-image: url("../img/features-cat__tablet.webp");
     background-size: 430px 609px;
     background-position: 53% -37px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/features-cat__tablet2x.png");
+      background-image: url("../img/features-cat__tablet2x.webp");
     }
   }
 
@@ -146,12 +146,12 @@
   .features__list {
     width: 310px;
     min-height: 589px;
-    background-image: url("../img/features-cat__mobile.png");
+    background-image: url("../img/features-cat__mobile.webp");
     background-size: 280px 304px;
     background-position: center -3px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/features-cat__mobile2x.png");
+      background-image: url("../img/features-cat__mobile2x.webp");
     }
   }
 

@@ -43,41 +43,53 @@
 
 .questions__item-question_first {
   &::before {
-    background-image: url("../img/01.png");
+    background-image: url("../img/01.webp");
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/01@2x.png");
+    &::before {
+      background-image: url("../img/01@2x.webp");
+      background-size: 65px 52px;
+    }
   }
 }
 
 .questions__item-question_second {
   &::before {
-    background-image: url("../img/02.png");
+    background-image: url("../img/02.webp");
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/02@2x.png");
+    &::before {
+      background-image: url("../img/02@2x.webp");
+      background-size: 75px 52px;
+    }
   }
 }
 
 .questions__item-question_third {
   &::before {
-    background-image: url("../img/03.png");
+    background-image: url("../img/03.webp");
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/03@2x.png");
+    &::before {
+      background-image: url("../img/03@2x.webp");
+      background-size: 75px 52px;
+    }
   }
 }
 
 .questions__item-question_fourth {
   &::before {
-    background-image: url("../img/04.png");
+    background-image: url("../img/04.webp");
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/04@2x.png");
+    &::before {
+      background-image: url("../img/04@2x.webp");
+      background-size: 75px 52px;
+    }
   }
 }
 
@@ -209,41 +221,53 @@
 
   .questions__item-question_first {
     &::before {
-      background-image: url("../img/01_tablet.png");
+      background-image: url("../img/01_tablet.webp");
     }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/01_tablet@2x.png");
+      &::before {
+        background-image: url("../img/01_tablet@2x.webp");
+        background-size: 46px 38px;
+      }
     }
   }
 
   .questions__item-question_second {
     &::before {
-      background-image: url("../img/02_tablet.png");
+      background-image: url("../img/02_tablet.webp");
     }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/02_tablet@2x.png");
+      &::before {
+        background-image: url("../img/02_tablet@2x.webp");
+        background-size: 54px 38px;
+      }
     }
   }
 
   .questions__item-question_third {
     &::before {
-      background-image: url("../img/03_tablet.png");
+      background-image: url("../img/03_tablet.webp");
     }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/03_tablet@2x.png");
+      &::before {
+        background-image: url("../img/03_tablet@2x.webp");
+        background-size: 54px 38px;
+      }
     }
   }
 
   .questions__item-question_fourth {
     &::before {
-      background-image: url("../img/04_tablet.png");
+      background-image: url("../img/04_tablet.webp");
     }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/04_tablet@2x.png");
+      &::before {
+        background-image: url("../img/04_tablet@2x.webp");
+        background-size: 54px 38px;
+      }
     }
   }
 }

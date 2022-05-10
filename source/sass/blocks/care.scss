@@ -1,5 +1,5 @@
 .care {
-  background-image: url("../img/care.png");
+  background-image: url("../img/care.webp");
   background-repeat: no-repeat;
   display: block;
   background-size: cover;
@@ -7,7 +7,7 @@
   background-color: $background-light;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/care2x.png");
+    background-image: url("../img/care2x.webp");
   }
 }
 
@@ -81,11 +81,7 @@
 
 @media (max-width: $desktop-width) {
   .care {
-    // background-image: url("../img/care__tablet.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/care__tablet2x.png");
-    }
+    background-image: url("../img/care__tablet2x.webp");
   }
 
   .care__title {
@@ -119,11 +115,7 @@
 
 @media (max-width: $tablet-width) {
   .care {
-    // background-image: url("../img/care__mobile.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/care__mobile@2x.png");
-    }
+    background-image: url("../img/care__mobile@2x.webp");
   }
 
   .care__title {
